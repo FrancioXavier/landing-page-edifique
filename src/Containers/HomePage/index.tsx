@@ -19,6 +19,8 @@ export default function HomePage() {
             <span>EDIFIQUE</span>
             <br /> AÇÕES
           </h1>
+
+          <p>Cursinho pré-vestibular popular e programa de extensão da UFCA</p>
         </ContentHome>
       </HomeSection>
     </>
