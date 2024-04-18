@@ -1,10 +1,12 @@
 import { theme } from '@/styles/theme';
 import { ContentHome, HomeSection } from './styled';
 import background from '@/config/img/bgHome.svg';
+import { Header } from '@/components/Header';
 
 export default function HomePage() {
   return (
     <>
+      <Header />
       <HomeSection
         style={{
           backgroundImage: `url(${background.src})`,
