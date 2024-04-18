@@ -25,16 +25,16 @@ export const Header = () => {
           </div>
           <div className="col d-flex flex-row justify-content-end align-items-center">
             <Link href="#" className="d-flex flex-row">
-              <p className="m-1">Quem somos</p>
+              <p className="mx-1">Quem somos</p>
             </Link>
             <Link href="#" className="d-flex flex-row">
-              <p className="m-1">Inspirações</p>
+              <p className="mx-1">Inspirações</p>
             </Link>
             <Link href="#" className="d-flex flex-row">
-              <p className="m-1">Doações</p>
+              <p className="mx-1">Doações</p>
             </Link>
             <Link href="#" className="d-flex flex-row">
-              <p className="m-1">Nossa equipe</p>
+              <p className="mx-1">Nossa equipe</p>
             </Link>
           </div>
         </div>

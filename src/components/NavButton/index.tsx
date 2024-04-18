@@ -10,7 +10,10 @@ function NavButton() {
       <Navbar expand={false} className="mb-3">
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${false}`}
-          style={{ backgroundColor: theme.colors.black, color: '#fff' }}
+          style={{
+            backgroundColor: theme.colors.black,
+            color: '#fff',
+          }}
         >
           <IoMenu size={30} style={{ color: '#fff' }} />
         </Navbar.Toggle>
