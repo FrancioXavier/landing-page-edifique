@@ -12,10 +12,11 @@ function NavButton() {
           aria-controls={`offcanvasNavbar-expand-${false}`}
           style={{
             backgroundColor: theme.colors.black,
-            color: '#fff',
+            color: theme.colors.white,
+            border: `1px solid ${theme.colors.white}`,
           }}
         >
-          <IoMenu size={30} style={{ color: '#fff' }} />
+          <IoMenu size={30} style={{ color: theme.colors.white }} />
         </Navbar.Toggle>
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${false}`}
@@ -24,14 +25,20 @@ function NavButton() {
         >
           <Offcanvas.Header
             closeButton
-            style={{ backgroundColor: theme.colors.black, color: '#fff' }}
+            style={{
+              backgroundColor: theme.colors.black,
+              color: theme.colors.white,
+            }}
           >
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${false}`}>
               EDIFIQUE AÇÕES
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body
-            style={{ backgroundColor: theme.colors.black, color: '#fff' }}
+            style={{
+              backgroundColor: theme.colors.black,
+              color: theme.colors.white,
+            }}
           >
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="/">Quem somos</Nav.Link>

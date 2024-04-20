@@ -23,10 +23,26 @@ export const ContentHome = styled.div`
     font-weight: bold;
     font-size: 125px;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 769px) {
+      font-size: 75px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 50px;
+    }
   }
   p {
     width: 80%;
     font-size: 25px;
     font-weight: bold;
+
+    @media only screen and (max-width: 769px) {
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 10px;
+    }
   }
 `;

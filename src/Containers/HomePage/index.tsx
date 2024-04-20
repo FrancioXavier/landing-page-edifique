@@ -13,7 +13,7 @@ export default function HomePage() {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundColor: theme.colors.black,
-        height: '450vh',
+        height: 'fit-content',
       }}
     >
       <Header />
