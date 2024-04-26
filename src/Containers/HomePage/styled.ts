@@ -6,6 +6,24 @@ export const HomeSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+`;
+
+export const CarouselSection = styled.section`
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10rem;
+`;
+
+export const TitlePage = styled.h2`
+  font-weight: bolder;
+  color: #fff;
+  font-size: 48px;
+  margin: 5rem 0 5rem 0;
 `;
 
 export const ContentHome = styled.div`
