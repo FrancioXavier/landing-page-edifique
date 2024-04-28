@@ -53,7 +53,7 @@ const Carousel: React.FC<PropType> = (props) => {
       ) : null}
       {slideType === 'stories' ? (
         <CarouselSlider ref={emblaRef}>
-          <div className="sponsorsCarousel">
+          <div className="storiesCarousel">
             <Stories />
           </div>
         </CarouselSlider>

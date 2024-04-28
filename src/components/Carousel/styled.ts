@@ -9,10 +9,17 @@ export const CarouselSlider = styled.div`
     align-items: center;
   }
 
-  .ourMastersMobileCarousel {
+  .storiesCarousel {
     display: flex;
-    width: 100%;
+    width: 80vw;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      width: 99vw;
+    }
+    @media only screen and (max-width: 668px) {
+      width: 100%;
+    }
   }
 
   .xiloHistoryCarousel {
@@ -85,4 +92,11 @@ export const CarouselSlider = styled.div`
       color: rgba(129, 129, 129, 1);
     }
   `}
+
+  @media only screen and (max-width: 550px) {
+    .xiloHistory__dot {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 `;

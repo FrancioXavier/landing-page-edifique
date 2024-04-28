@@ -24,6 +24,10 @@ export const TitlePage = styled.h2`
   color: #fff;
   font-size: 48px;
   margin: 5rem 0 5rem 0;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const ContentHome = styled.div`

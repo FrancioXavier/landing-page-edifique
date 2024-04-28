@@ -1,20 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { CarouselContainer } from './styled';
-import bruno from '@/config/img/stories/bruno.svg';
 
 export default function Stories() {
   return (
     <>
       <CarouselContainer>
-        <div
-          className="photo"
-          style={{
-            backgroundImage: `url(${bruno.src})`,
-            backgroundPosition: 'top',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-          }}
-        ></div>
+        <div className="photo"></div>
         <div className="text">
           <h3>Bruno Presidente</h3>
           <p>
