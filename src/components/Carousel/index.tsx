@@ -34,10 +34,10 @@ const Carousel: React.FC<PropType> = (props) => {
                   onClick={() => {
                     onDotButtonClick(index);
                   }}
-                  className={'xiloHistory__dot'
+                  className={'xiloHistory__bar'
                     .concat(
                       index === selectedIndex
-                        ? ' xiloHistory__dot--selected'
+                        ? ' xiloHistory__bar--selected'
                         : '',
                     )
                     .concat(

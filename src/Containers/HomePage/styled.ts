@@ -40,7 +40,7 @@ export const ContentHome = styled.div`
   width: 35vw;
   height: 40vh;
   position: absolute;
-  left: 23%; /* por exemplo */
+  left: 26%; /* por exemplo */
   top: 50%; /* por exemplo */
   transform: translate(-50%, -60%);
   @media only screen and (max-width: 1050px) {
@@ -243,6 +243,28 @@ export const Card = styled.div`
 
       h3 {
         font-weight: bolder;
+      }
+
+      p {
+        font-size: 1.2vw;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    width: 30%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 30%;
+    height: 50vh;
+    .text {
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 1.68vw;
       }
     }
   }

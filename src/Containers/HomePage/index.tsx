@@ -1,6 +1,5 @@
 // import { theme } from '@/styles/theme';
 import {
-  Card,
   CarouselSection,
   ContentHome,
   ContentSection,
@@ -9,35 +8,43 @@ import {
 } from './styled';
 // import background from '@/config/img/bgHome.svg';
 import { Header } from '@/components/Header';
-import backgroundGeral from '@/config/img/newBg.svg';
+import backgroundGeral from '@/config/img/new-bg.svg';
 import { EmblaOptionsType } from 'embla-carousel';
 import Carousel from '@/components/Carousel';
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa6';
 import { FaTwitter } from 'react-icons/fa';
+import { Card, Col, Row } from 'react-bootstrap';
+import { theme } from '@/styles/theme';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
   const SLIDETYPE: string = 'sponsors';
   const slideHistory: string = 'stories';
   return (
-    <div style={{ width: '100%', height: 'fit-content' }}>
-      <Image
-        src={backgroundGeral.src}
-        height={100}
-        width={100}
-        priority
-        alt="teste"
-        style={{
-          width: '100%',
-          height: 'fit-content',
-          zIndex: 0,
-          position: 'absolute',
-        }}
-      />
-      <Header />
+    <div
+      style={{
+        width: '100%',
+        height: 'fit-content',
+        backgroundColor: theme.colors.primary,
+      }}
+    >
       <HomeSection>
+        <Header />
+        <Image
+          src={backgroundGeral.src}
+          height={100}
+          width={100}
+          priority
+          alt="teste"
+          style={{
+            width: '100%',
+            height: 'fit-content',
+            zIndex: 0,
+            position: 'absolute',
+          }}
+        />
         <ContentHome style={{ zIndex: 1 }}>
           <h1>BEM VINDO AO EDIFIQUE ACOES</h1>
           <h2>O melhor cursinho gratuito para o ENEM</h2>
@@ -60,26 +67,56 @@ export default function HomePage() {
           <h1>METODOLOGIA DE ENSINO</h1>
           <h2>Conheça nossos projetos</h2>
           <div className="cardSection">
-            <Card>
-              <div className="content">
-                <div className="icon">a</div>
-                <div className="text">
-                  <h3>Simulados para o ENEM</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laboriosam a quibusdam voluptas? Nihil, blanditiis ullam
-                    repellendus nostrum nemo eos! Accusamus ab iusto quidem
-                    animi dolorem amet iure impedit tenetur esse? Lorem ipsum
-                    dolor, sit amet consectetur adipisicing elit. Harum
-                    veritatis maiores est perspiciatis. Inventore commodi
-                    aliquam, sed dicta laboriosam nihil. Libero officiis
-                    voluptatibus magni maiores ad, iure eos quos consequuntur!
-                  </p>
-                </div>
-              </div>
-            </Card>
-            <Card>a</Card>
-            <Card>a</Card>
+            <Row xs={1} sm={2} md={3} className="g-5 text-start">
+              <Col>
+                <Card>
+                  <Card.Body
+                    className="px-5"
+                    style={{ color: theme.colors.primary }}
+                  >
+                    <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
+                    <Card.Text>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Enim a quo nemo dolore laudantium ducimus sunt quod minima
+                      cupiditate veritatis. Distinctio voluptatem perspiciatis
+                      aperiam rerum, quaerat dolore illo necessitatibus quis!
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Body
+                    className="px-5"
+                    style={{ color: theme.colors.primary }}
+                  >
+                    <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
+                    <Card.Text>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Enim a quo nemo dolore laudantium ducimus sunt quod minima
+                      cupiditate veritatis. Distinctio voluptatem perspiciatis
+                      aperiam rerum, quaerat dolore illo necessitatibus quis!
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Body
+                    className="px-5"
+                    style={{ color: theme.colors.primary }}
+                  >
+                    <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
+                    <Card.Text>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Enim a quo nemo dolore laudantium ducimus sunt quod minima
+                      cupiditate veritatis. Distinctio voluptatem perspiciatis
+                      aperiam rerum, quaerat dolore illo necessitatibus quis!
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
           </div>
         </ContentSection>
       </HomeSection>

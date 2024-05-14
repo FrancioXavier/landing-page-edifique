@@ -7,7 +7,7 @@ import edifiqueLogo from '@/config/img/edifique-logo.svg';
 export const Header = () => {
   return (
     <>
-      <Nav className="">
+      <Nav className="" style={{ zIndex: 1 }}>
         <div className="row align-items-center w-100">
           <div className="pharTitle">
             <a href="/">

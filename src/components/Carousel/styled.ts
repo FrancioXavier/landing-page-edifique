@@ -71,8 +71,38 @@ export const CarouselSlider = styled.div`
     .xiloHistory__dot--selected:after {
       background: ${theme.colors.primary};
     }
-    .backOrange {
-      background-color: ${theme.colors.primary};
+
+    .xiloHistory__bar {
+      /* -webkit-tap-highlight-color: rgba(black, 0.5); */
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: rgba(217, 217, 217, 1);
+      touch-action: manipulation;
+      display: inline-flex;
+      text-decoration: none;
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      width: 5rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      margin-left: 2rem;
+    }
+    .xiloHistory__bar:after {
+      box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      content: '';
+    }
+    .xiloHistory__bar--selected:after {
+      background: #e30016;
     }
 
     .line {

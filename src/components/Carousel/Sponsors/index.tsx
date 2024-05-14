@@ -4,10 +4,26 @@ import meSalva from '@/config/img/sponsors/meSalva.svg';
 import BC from '@/config/img/sponsors/BC.svg';
 import wizard from '@/config/img/sponsors/wizard.svg';
 import arco from '@/config/img/sponsors/arco.svg';
+import fisk from '@/config/img/sponsors/fisk.svg';
 
 export default function Sponsors() {
   return (
     <>
+      <CarouselContainer>
+        <LogoSponsor>
+          <Image
+            src={fisk.src}
+            priority
+            height={100}
+            width={100}
+            style={{
+              width: 'fit=content',
+              height: 'fit-content',
+            }}
+            alt="teste"
+          />
+        </LogoSponsor>
+      </CarouselContainer>
       <CarouselContainer>
         <LogoSponsor>
           <Image
@@ -16,8 +32,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: '100%',
-              height: '100%',
+              width: 'fit=content',
+              height: 'fit-content',
             }}
             alt="teste"
           />
@@ -31,8 +47,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: '100%',
-              height: '100%',
+              width: 'fit=content',
+              height: 'fit-content',
             }}
             alt="teste"
           />
@@ -46,8 +62,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: '100%',
-              height: '100%',
+              width: 'fit=content',
+              height: 'fit-content',
             }}
             alt="teste"
           />
@@ -61,8 +77,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: '100%',
-              height: '100%',
+              width: 'fit=content',
+              height: 'fit-content',
             }}
             alt="teste"
           />
