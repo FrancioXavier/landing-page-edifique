@@ -29,17 +29,25 @@ export const Header = () => {
             </a>
           </div>
           <div className="col d-flex flex-row justify-content-end align-items-center">
-            <Link href="#" className="d-flex flex-row">
-              <p className="mx-1">Quem somos</p>
+            <Link href="#" className="buttonGradient">
+              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+                Quem somos
+              </p>
             </Link>
-            <Link href="#" className="d-flex flex-row">
-              <p className="mx-1">Inspirações</p>
+            <Link href="#" className="buttonGradient">
+              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+                Inspirações
+              </p>
             </Link>
-            <Link href="#" className="d-flex flex-row">
-              <p className="mx-1">Doações</p>
+            <Link href="#" className="buttonGradient">
+              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+                Doações
+              </p>
             </Link>
-            <Link href="#" className="d-flex flex-row">
-              <p className="mx-1">Nossa equipe</p>
+            <Link href="#" className="buttonGradient">
+              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+                Nossa equipe
+              </p>
             </Link>
           </div>
         </div>

@@ -12,10 +12,5 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.colors.primary};
     text-decoration: none;
-    transition: opacity 300ms ease-in-out;
-
-    &:hover {
-      opacity: .6;
-    }
   }
 `;

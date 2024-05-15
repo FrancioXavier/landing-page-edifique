@@ -48,7 +48,6 @@ export default function HomePage() {
         <ContentHome style={{ zIndex: 1 }}>
           <h1>BEM VINDO AO EDIFIQUE ACOES</h1>
           <h2>O melhor cursinho gratuito para o ENEM</h2>
-          <button>inscreva-se gratuitamente</button>
           <div className="icons">
             <div className="iconContainer">
               <FaInstagram size={30} />
@@ -71,11 +70,11 @@ export default function HomePage() {
               <Col>
                 <Card>
                   <Card.Body
-                    className="px-5"
+                    className="px-5 text-md-start text-sm-center"
                     style={{ color: theme.colors.primary }}
                   >
                     <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="fs-6">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis

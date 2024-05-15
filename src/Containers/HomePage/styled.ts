@@ -64,22 +64,6 @@ export const ContentHome = styled.div`
     }
   }
 
-  button {
-    padding: 10px 40px;
-    font-size: larger;
-    font-weight: bolder;
-    border-radius: 25px;
-    margin-top: 1.5rem;
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.white};
-    border: none;
-
-    @media only screen and (max-width: 1000px) {
-      font-size: medium;
-      padding: 10px 30px;
-    }
-  }
-
   .icons {
     display: flex;
     margin-top: 3.5rem;

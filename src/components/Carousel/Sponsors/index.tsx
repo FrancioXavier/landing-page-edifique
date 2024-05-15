@@ -17,8 +17,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: 'fit=content',
-              height: 'fit-content',
+              width: '100%',
+              height: '100%',
             }}
             alt="teste"
           />
@@ -32,8 +32,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: 'fit=content',
-              height: 'fit-content',
+              width: '100%',
+              height: '100%',
             }}
             alt="teste"
           />
@@ -47,8 +47,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: 'fit=content',
-              height: 'fit-content',
+              width: '100%',
+              height: '100%',
             }}
             alt="teste"
           />
@@ -62,8 +62,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: 'fit=content',
-              height: 'fit-content',
+              width: '100%',
+              height: '100%',
             }}
             alt="teste"
           />
@@ -77,8 +77,8 @@ export default function Sponsors() {
             height={100}
             width={100}
             style={{
-              width: 'fit=content',
-              height: 'fit-content',
+              width: '100%',
+              height: '100%',
             }}
             alt="teste"
           />
