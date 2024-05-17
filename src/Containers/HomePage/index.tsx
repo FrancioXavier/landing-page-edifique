@@ -17,6 +17,9 @@ import { FaFacebookF } from 'react-icons/fa6';
 import { FaTwitter } from 'react-icons/fa';
 import { Card, Col, Row } from 'react-bootstrap';
 import { theme } from '@/styles/theme';
+import books from '@/config/img/elements/books.svg';
+import test from '@/config/img/elements/test.svg';
+import pcImage from '@/config/img/elements/pc.svg';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
@@ -73,8 +76,17 @@ export default function HomePage() {
                     className="px-5 text-md-start text-sm-center"
                     style={{ color: theme.colors.primary }}
                   >
+                    <Image
+                      src={books.src}
+                      width={100}
+                      height={100}
+                      alt="teste"
+                    />
                     <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
-                    <Card.Text className="fs-6">
+                    <Card.Text
+                      className="fs-6"
+                      style={{ paddingBottom: '5rem' }}
+                    >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
@@ -89,8 +101,17 @@ export default function HomePage() {
                     className="px-5"
                     style={{ color: theme.colors.primary }}
                   >
+                    <Image
+                      src={test.src}
+                      width={100}
+                      height={100}
+                      alt="teste"
+                    />
                     <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
-                    <Card.Text>
+                    <Card.Text
+                      className="fs-6"
+                      style={{ paddingBottom: '5rem' }}
+                    >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
@@ -105,8 +126,17 @@ export default function HomePage() {
                     className="px-5"
                     style={{ color: theme.colors.primary }}
                   >
+                    <Image
+                      src={pcImage.src}
+                      width={100}
+                      height={100}
+                      alt="teste"
+                    />
                     <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
-                    <Card.Text>
+                    <Card.Text
+                      className="fs-6"
+                      style={{ paddingBottom: '5rem' }}
+                    >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis

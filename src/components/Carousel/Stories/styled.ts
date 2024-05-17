@@ -9,7 +9,7 @@ export const CarouselContainer = styled.div`
   justify-content: center;
   flex: 0 0 100%;
   min-width: 0;
-  width: 90vw;
+  width: 95vw;
   height: fit-content;
   background-color: ${({ theme }) => theme.colors.darkPrimary};
 
@@ -18,6 +18,7 @@ export const CarouselContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    justify-content: center;
     .photo {
       height: 18.229vw;
       width: 18.229vw;
@@ -44,17 +45,18 @@ export const CarouselContainer = styled.div`
 
   .text {
     height: 100%;
-    width: 50%;
+    width: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    text-align: left;
+    margin-left: 2rem;
 
     p {
-      font-size: 25px;
+      font-size: 1.1vw;
       color: ${({ theme }) => theme.colors.white};
-      line-height: 40px;
 
       @media only screen and (max-width: 1500px) {
         font-size: 20px;

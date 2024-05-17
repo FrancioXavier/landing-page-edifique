@@ -9,6 +9,8 @@ import { Buttons, TitlePage } from '@/Containers/HomePage/styled';
 import { FaArrowLeftLong } from 'react-icons/fa6';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { TitleContent } from './Stories/styled';
+import Image from 'next/image';
+import heart from '@/config/img/elements/element1.svg';
 
 type PropType = {
   slideType: string;
@@ -76,7 +78,10 @@ const Carousel: React.FC<PropType> = (props) => {
             </div>
           </CarouselSlider>
           <TitleContent>
-            <TitlePage>Histórias que edificam</TitlePage>
+            <TitlePage>
+              Histórias que edificam{' '}
+              <Image src={heart.src} width={100} height={100} alt="teste" />{' '}
+            </TitlePage>
             <Buttons>
               <button
                 className="prev"

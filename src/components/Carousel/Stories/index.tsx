@@ -1,5 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
 import { CarouselContainer } from './styled';
+import quotMarks from '@/config/img/elements/element3.svg';
+// import traits from '@/config/img/elements/element2.svg';
 
 export default function Stories() {
   return (
@@ -14,9 +17,12 @@ export default function Stories() {
             </div>
           </div>
           <div className="text">
+            <Image src={quotMarks.src} alt="teste" width={100} height={100} />
             <p>
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-              dolore labori
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+              dolore labori Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Deleniti totam quod voluptatibus quam repellendus quos rerum
+              perferendis, nostrum
             </p>
           </div>
         </div>
@@ -29,9 +35,12 @@ export default function Stories() {
             </div>
           </div>
           <div className="text">
+            <Image src={quotMarks.src} alt="teste" width={100} height={100} />
             <p>
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-              dolore labori
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+              dolore labori Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Deleniti totam quod voluptatibus quam repellendus quos rerum
+              perferendis, nostrum
             </p>
           </div>
         </div>
