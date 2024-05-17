@@ -27,7 +27,7 @@ export default function HomePage() {
       style={{
         width: '100%',
         height: 'fit-content',
-        backgroundColor: theme.colors.primary,
+        backgroundColor: theme.colors.darkPrimary,
       }}
     >
       <HomeSection>
@@ -124,7 +124,6 @@ export default function HomePage() {
         <div className="carouselcontainer">
           <Carousel slideType={SLIDETYPE} options={OPTIONS} />
         </div>
-        <TitlePage>Histórias que edificam</TitlePage>
         <Carousel slideType={slideHistory} options={OPTIONS} />
       </CarouselSection>
     </div>

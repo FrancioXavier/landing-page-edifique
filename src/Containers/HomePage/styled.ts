@@ -22,8 +22,8 @@ export const CarouselSection = styled.section`
 export const TitlePage = styled.h2`
   font-weight: bolder;
   color: #fff;
-  font-size: 48px;
-  margin: 5rem 0 5rem 0;
+  font-size: 2.604vw;
+  margin-bottom: 5rem;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -138,6 +138,7 @@ export const ContentSection = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 3rem;
   }
 
   @media only screen and (max-width: 1050px) {
@@ -251,5 +252,22 @@ export const Card = styled.div`
         font-size: 1.68vw;
       }
     }
+  }
+`;
+
+export const Buttons = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5rem;
+  align-items: center;
+  right: 0;
+  margin-right: 3rem;
+  position: absolute;
+
+  button {
+    border: none;
+    background: none;
+    color: ${({ theme }) => theme.colors.white};
   }
 `;

@@ -10,16 +10,36 @@ export const CarouselContainer = styled.div`
   flex: 0 0 100%;
   min-width: 0;
   width: 90vw;
-  height: 80vh;
-  background-color: ${({ theme }) => theme.colors.primary};
+  height: fit-content;
+  background-color: ${({ theme }) => theme.colors.darkPrimary};
 
-  .photo {
-    height: 100%;
-    width: 50%;
-    background-image: url(${bruno.src});
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .photoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    .photo {
+      height: 18.229vw;
+      width: 18.229vw;
+      border-radius: 50%;
+      background-image: url(${bruno.src});
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.563vw;
+      color: ${({ theme }) => theme.colors.white};
+      margin-bottom: 0;
+    }
+
+    .sub {
+      text-align: center;
+      font-size: 1.2vw;
+      color: ${({ theme }) => theme.colors.white};
+    }
   }
 
   .text {
@@ -31,19 +51,8 @@ export const CarouselContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    h3 {
-      font-size: 40px;
-      font-weight: bold;
-      color: ${({ theme }) => theme.colors.white};
-      margin-bottom: 1rem;
-      @media only screen and (max-width: 940px) {
-        font-size: 30px;
-      }
-    }
     p {
-      width: 80%;
       font-size: 25px;
-      font-weight: bold;
       color: ${({ theme }) => theme.colors.white};
       line-height: 40px;
 
@@ -66,9 +75,6 @@ export const CarouselContainer = styled.div`
     }
 
     @media only screen and (max-width: 300px) {
-      h3 {
-        font-size: 25px;
-      }
       p {
         line-height: 20px;
         width: 90%;
@@ -76,9 +82,6 @@ export const CarouselContainer = styled.div`
     }
 
     @media only screen and (max-width: 280px) {
-      h3 {
-        font-size: 20px;
-      }
       p {
         font-size: 13px;
         line-height: 20px;
@@ -103,4 +106,11 @@ export const CarouselContainer = styled.div`
       height: 50%;
     }
   }
+`;
+
+export const TitleContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
 `;
