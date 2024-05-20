@@ -128,7 +128,7 @@ export const ContentSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   z-index: 1;
 

@@ -15,7 +15,7 @@ export const Header = () => {
                 className="position-absolute"
                 style={{
                   width: '30%',
-                  height: '90%',
+                  height: '100%',
                   top: 0,
                 }}
               >
@@ -30,22 +30,34 @@ export const Header = () => {
           </div>
           <div className="col d-flex flex-row justify-content-end align-items-center">
             <Link href="#" className="buttonGradient">
-              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+              <p
+                className="mx-3 px-1 py-1"
+                style={{ marginBottom: 0, fontSize: '1vw' }}
+              >
                 Quem somos
               </p>
             </Link>
             <Link href="#" className="buttonGradient">
-              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+              <p
+                className="mx-3 px-1 py-1"
+                style={{ marginBottom: 0, fontSize: '1vw' }}
+              >
                 Inspirações
               </p>
             </Link>
             <Link href="#" className="buttonGradient">
-              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+              <p
+                className="mx-3 px-1 py-1"
+                style={{ marginBottom: 0, fontSize: '1vw' }}
+              >
                 Doações
               </p>
             </Link>
             <Link href="#" className="buttonGradient">
-              <p className="mx-3 px-1 py-1" style={{ marginBottom: 0 }}>
+              <p
+                className="mx-3 px-1 py-1"
+                style={{ marginBottom: 0, fontSize: '1vw' }}
+              >
                 Nossa equipe
               </p>
             </Link>

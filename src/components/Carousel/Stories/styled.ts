@@ -57,16 +57,6 @@ export const CarouselContainer = styled.div`
     p {
       font-size: 1.1vw;
       color: ${({ theme }) => theme.colors.white};
-
-      @media only screen and (max-width: 1500px) {
-        font-size: 20px;
-        line-height: 35px;
-      }
-
-      @media only screen and (max-width: 1100px) {
-        font-size: 15px;
-        line-height: 30px;
-      }
     }
 
     @media only screen and (max-width: 408px) {

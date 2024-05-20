@@ -64,8 +64,8 @@ export default function HomePage() {
           </div>
         </ContentHome>
       </HomeSection>
-      <HomeSection>
-        <ContentSection>
+      <HomeSection style={{ height: 'fit-content', marginBottom: '8rem' }}>
+        <ContentSection style={{ zIndex: 1 }}>
           <h1>METODOLOGIA DE ENSINO</h1>
           <h2>Conheça nossos projetos</h2>
           <div className="cardSection">
@@ -81,11 +81,19 @@ export default function HomePage() {
                       width={100}
                       height={100}
                       alt="teste"
+                      style={{
+                        width: '5.5vw',
+                        height: '5.5vw',
+                      }}
                     />
-                    <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
+                    <Card.Title
+                      className="fw-bold"
+                      style={{ fontSize: '1.8vw' }}
+                    >
+                      Card title
+                    </Card.Title>
                     <Card.Text
-                      className="fs-6"
-                      style={{ paddingBottom: '5rem' }}
+                      style={{ paddingBottom: '2rem', fontSize: '1vw' }}
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
@@ -106,11 +114,19 @@ export default function HomePage() {
                       width={100}
                       height={100}
                       alt="teste"
+                      style={{
+                        width: '5.5vw',
+                        height: '5.5vw',
+                      }}
                     />
-                    <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
+                    <Card.Title
+                      className="fw-bold"
+                      style={{ fontSize: '1.8vw' }}
+                    >
+                      Card title
+                    </Card.Title>
                     <Card.Text
-                      className="fs-6"
-                      style={{ paddingBottom: '5rem' }}
+                      style={{ paddingBottom: '2rem', fontSize: '1vw' }}
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
@@ -131,11 +147,19 @@ export default function HomePage() {
                       width={100}
                       height={100}
                       alt="teste"
+                      style={{
+                        width: '5.5vw',
+                        height: '5.5vw',
+                      }}
                     />
-                    <Card.Title className="fs-2 fw-bold">Card title</Card.Title>
+                    <Card.Title
+                      className="fw-bold"
+                      style={{ fontSize: '1.8vw' }}
+                    >
+                      Card title
+                    </Card.Title>
                     <Card.Text
-                      className="fs-6"
-                      style={{ paddingBottom: '5rem' }}
+                      style={{ paddingBottom: '2rem', fontSize: '1vw' }}
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
@@ -149,7 +173,7 @@ export default function HomePage() {
           </div>
         </ContentSection>
       </HomeSection>
-      <CarouselSection>
+      <CarouselSection style={{ zIndex: 1 }}>
         <TitlePage>Nossos parceiros</TitlePage>
         <div className="carouselcontainer">
           <Carousel slideType={SLIDETYPE} options={OPTIONS} />
