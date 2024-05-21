@@ -53,13 +53,31 @@ export default function HomePage() {
           <h2>O melhor cursinho gratuito para o ENEM</h2>
           <div className="icons">
             <div className="iconContainer">
-              <FaInstagram size={30} />
+              <a
+                href="https://www.instagram.com/edifiqueacoes/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram size={30} />
+              </a>
             </div>
             <div className="iconContainer">
-              <FaFacebookF size={30} />
+              <a
+                href="https://www.instagram.com/edifiqueacoes/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebookF size={30} />
+              </a>
             </div>
             <div className="iconContainer">
-              <FaTwitter size={30} />
+              <a
+                href="https://www.instagram.com/edifiqueacoes/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaTwitter size={30} />
+              </a>
             </div>
           </div>
         </ContentHome>
@@ -174,7 +192,7 @@ export default function HomePage() {
         </ContentSection>
       </HomeSection>
       <CarouselSection style={{ zIndex: 1 }}>
-        <TitlePage>Nossos parceiros</TitlePage>
+        <TitlePage style={{ zIndex: 1 }}>Nossos parceiros</TitlePage>
         <div className="carouselcontainer">
           <Carousel slideType={SLIDETYPE} options={OPTIONS} />
         </div>

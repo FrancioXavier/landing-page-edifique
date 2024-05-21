@@ -71,14 +71,21 @@ export const ContentHome = styled.div`
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: ${({ theme }) => theme.colors.white};
+      background: ${({ theme }) => theme.colors.white};
       margin-right: 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      border: 3px solid none;
+      transition: all 0.5s ease-out;
 
       svg {
         color: ${({ theme }) => theme.colors.black};
+      }
+
+      &:hover {
+        background: linear-gradient(to left, #ff5209, #ff0000) border-box;
       }
     }
   }
