@@ -53,7 +53,7 @@ export const Header = () => {
                 Doações
               </p>
             </Link>
-            <Link href="#" className="buttonGradient">
+            <Link href="/nossa-equipe" className="buttonGradient">
               <p
                 className="mx-3 px-1 py-1"
                 style={{ marginBottom: 0, fontSize: '1vw' }}

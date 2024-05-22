@@ -63,7 +63,7 @@ export default function HomePage() {
             </div>
             <div className="iconContainer">
               <a
-                href="https://www.instagram.com/edifiqueacoes/"
+                href="https://www.facebook.com/EdifiqueAcoes/?locale=pt_BR"
                 target="_blank"
                 rel="noreferrer"
               >

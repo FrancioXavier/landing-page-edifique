@@ -41,13 +41,15 @@ export default function Stories() {
             </div>
           </div>
           <div className="text">
-            <Image
-              src={quotMarks.src}
-              alt="teste"
-              width={100}
-              height={100}
-              style={{ width: '5.5vw', height: '5.5vw' }}
-            />
+            <div>
+              <Image
+                src={quotMarks.src}
+                alt="teste"
+                width={100}
+                height={100}
+                style={{ width: '5.5vw', height: '5.5vw' }}
+              />
+            </div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
               dolore labori Lorem ipsum dolor sit amet consectetur adipisicing
