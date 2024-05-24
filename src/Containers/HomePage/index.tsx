@@ -49,7 +49,7 @@ export default function HomePage() {
           }}
         />
         <ContentHome style={{ zIndex: 1 }}>
-          <h1>BEM VINDO AO EDIFIQUE ACOES</h1>
+          <h1>BEM VINDO AO EDIFIQUE AÇÕES</h1>
           <h2>O melhor cursinho gratuito para o ENEM</h2>
           <div className="icons">
             <div className="iconContainer">
@@ -70,7 +70,7 @@ export default function HomePage() {
                 <FaFacebookF size={30} />
               </a>
             </div>
-            <div className="iconContainer">
+            <div className="iconContainer" id="about-us">
               <a
                 href="https://www.instagram.com/edifiqueacoes/"
                 target="_blank"
@@ -85,7 +85,7 @@ export default function HomePage() {
       <HomeSection style={{ height: 'fit-content', marginBottom: '8rem' }}>
         <ContentSection style={{ zIndex: 1 }}>
           <h1>METODOLOGIA DE ENSINO</h1>
-          <h2>Conheça nossos projetos</h2>
+          <h2>Conheça nosso sistema de aprendizagem</h2>
           <div className="cardSection">
             <Row xs={1} sm={2} md={3} className="g-5 text-start">
               <Col>
@@ -108,7 +108,7 @@ export default function HomePage() {
                       className="fw-bold"
                       style={{ fontSize: '1.8vw' }}
                     >
-                      Card title
+                      Aulas diversas e robustas
                     </Card.Title>
                     <Card.Text
                       style={{ paddingBottom: '2rem', fontSize: '1vw' }}
@@ -117,6 +117,8 @@ export default function HomePage() {
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
                       aperiam rerum, quaerat dolore illo necessitatibus quis!
+                      istinctio voluptatem perspiciatis aperiam rerum, quaerat
+                      dolore illo necessitatibus quis!
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -141,7 +143,7 @@ export default function HomePage() {
                       className="fw-bold"
                       style={{ fontSize: '1.8vw' }}
                     >
-                      Card title
+                      Simulados para vestibulares
                     </Card.Title>
                     <Card.Text
                       style={{ paddingBottom: '2rem', fontSize: '1vw' }}
@@ -150,6 +152,8 @@ export default function HomePage() {
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
                       aperiam rerum, quaerat dolore illo necessitatibus quis!
+                      istinctio voluptatem perspiciatis aperiam rerum, quaerat
+                      dolore illo necessitatibus quis!
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -174,7 +178,7 @@ export default function HomePage() {
                       className="fw-bold"
                       style={{ fontSize: '1.8vw' }}
                     >
-                      Card title
+                      Estudo com supervisão de monitores
                     </Card.Title>
                     <Card.Text
                       style={{ paddingBottom: '2rem', fontSize: '1vw' }}
@@ -183,6 +187,8 @@ export default function HomePage() {
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
                       aperiam rerum, quaerat dolore illo necessitatibus quis!
+                      istinctio voluptatem perspiciatis aperiam rerum, quaerat
+                      dolore illo necessitatibus quis!
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -196,7 +202,9 @@ export default function HomePage() {
         <div className="carouselcontainer">
           <Carousel slideType={SLIDETYPE} options={OPTIONS} />
         </div>
-        <Carousel slideType={slideHistory} options={OPTIONS} />
+        <div id="inspirations">
+          <Carousel slideType={slideHistory} options={OPTIONS} />
+        </div>
       </CarouselSection>
     </div>
   );

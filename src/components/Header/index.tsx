@@ -29,7 +29,7 @@ export const Header = () => {
             </a>
           </div>
           <div className="col d-flex flex-row justify-content-end align-items-center">
-            <Link href="#" className="buttonGradient">
+            <Link href="#about-us" className="buttonGradient">
               <p
                 className="mx-3 px-1 py-1"
                 style={{ marginBottom: 0, fontSize: '1vw' }}
@@ -37,7 +37,7 @@ export const Header = () => {
                 Quem somos
               </p>
             </Link>
-            <Link href="#" className="buttonGradient">
+            <Link href="#inspirations" className="buttonGradient">
               <p
                 className="mx-3 px-1 py-1"
                 style={{ marginBottom: 0, fontSize: '1vw' }}

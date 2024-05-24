@@ -160,7 +160,7 @@ export const ContentSection = styled.div`
     }
   }
   h2 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     text-align: left;
 
