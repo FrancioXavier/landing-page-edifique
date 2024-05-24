@@ -10,7 +10,7 @@ export const Header = () => {
       <Nav className="" style={{ zIndex: 1 }}>
         <div className="row align-items-center w-100">
           <div className="pharTitle">
-            <a href="/">
+            <a href="/landing-page-edifique/">
               <div
                 className="position-absolute"
                 style={{
@@ -37,7 +37,7 @@ export const Header = () => {
                 Quem somos
               </p>
             </Link>
-            <Link href="#inspirations" className="buttonGradient">
+            <Link href="#inspirations " className="buttonGradient">
               <p
                 className="mx-3 px-1 py-1"
                 style={{ marginBottom: 0, fontSize: '1vw' }}
