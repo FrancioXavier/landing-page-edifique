@@ -14,7 +14,7 @@ import Carousel from '@/components/Carousel';
 import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa6';
-import { FaTwitter } from 'react-icons/fa';
+// import { FaTwitter } from 'react-icons/fa';
 import { Card, Col, Row } from 'react-bootstrap';
 import { theme } from '@/styles/theme';
 import books from '@/config/img/elements/books.svg';
@@ -23,6 +23,7 @@ import pcImage from '@/config/img/elements/pc.svg';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
+  const OPTIONSSPONSORS: EmblaOptionsType = { align: 'start', loop: true };
   const SLIDETYPE: string = 'sponsors';
   const slideHistory: string = 'stories';
   return (
@@ -68,15 +69,6 @@ export default function HomePage() {
                 rel="noreferrer"
               >
                 <FaFacebookF size={30} />
-              </a>
-            </div>
-            <div className="iconContainer" id="about-us">
-              <a
-                href="https://www.instagram.com/edifiqueacoes/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaTwitter size={30} />
               </a>
             </div>
           </div>
@@ -200,7 +192,7 @@ export default function HomePage() {
       <CarouselSection style={{ zIndex: 1 }}>
         <TitlePage style={{ zIndex: 1 }}>Nossos parceiros</TitlePage>
         <div className="carouselcontainer">
-          <Carousel slideType={SLIDETYPE} options={OPTIONS} />
+          <Carousel slideType={SLIDETYPE} options={OPTIONSSPONSORS} />
         </div>
         <div id="inspirations">
           <Carousel slideType={slideHistory} options={OPTIONS} />
