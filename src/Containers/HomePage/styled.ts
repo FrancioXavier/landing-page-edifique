@@ -278,3 +278,23 @@ export const Buttons = styled.div`
     color: ${({ theme }) => theme.colors.white};
   }
 `;
+
+export const ActionsContainer = styled.div`
+  background: gray;
+  width: 35vw;
+  height: 50vh;
+`;
+
+export const ActionsCard = styled.div`
+  height: 80%;
+  width: 20vw;
+  border-top: 10px solid ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.darkPrimary};
+`;
+
+export const ActionsCardBottom = styled.div`
+  height: 80%;
+  width: 20vw;
+  border-bottom: 10px solid ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.darkPrimary};
+`;

@@ -4,10 +4,14 @@ import { TitlePage } from '../HomePage/styled';
 import bruno from '@/config/img/stories/bruno.svg';
 import { CardComponent } from '@/components/Card';
 import { Container, Row } from 'react-bootstrap';
+import Head from 'next/head';
 
 export default function OurTeam() {
   return (
     <>
+      <Head>
+        <title>Edifique Ações - equipe</title>
+      </Head>
       <Header />
       <Content>
         <ContainerCards>

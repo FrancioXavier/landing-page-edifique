@@ -1,5 +1,8 @@
 // import { theme } from '@/styles/theme';
 import {
+  ActionsCard,
+  ActionsCardBottom,
+  ActionsContainer,
   CarouselSection,
   ContentHome,
   ContentSection,
@@ -20,6 +23,7 @@ import { theme } from '@/styles/theme';
 import books from '@/config/img/elements/books.svg';
 import test from '@/config/img/elements/test.svg';
 import pcImage from '@/config/img/elements/pc.svg';
+import Head from 'next/head';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
@@ -34,6 +38,9 @@ export default function HomePage() {
         backgroundColor: theme.colors.darkPrimary,
       }}
     >
+      <Head>
+        <title>Edifique Ações - Home</title>
+      </Head>
       <HomeSection>
         <Header />
         <Image
@@ -186,6 +193,44 @@ export default function HomePage() {
                 </Card>
               </Col>
             </Row>
+          </div>
+        </ContentSection>
+      </HomeSection>
+      <HomeSection style={{ height: 'fit-content', marginBottom: '5rem' }}>
+        <ContentSection>
+          <TitlePage>Nossas Ações</TitlePage>
+          <div className="d-flex justify-content-around w-100 mb-5">
+            <ActionsContainer>
+              <ActionsCard style={{ marginLeft: '3rem' }}></ActionsCard>
+            </ActionsContainer>
+            <ActionsContainer style={{ width: '50vw' }}>
+              <ActionsCard style={{ marginLeft: '3rem' }}></ActionsCard>
+            </ActionsContainer>
+          </div>
+          <div className="d-flex justify-content-around w-100">
+            <ActionsContainer
+              style={{
+                width: '50vw',
+                display: 'flex',
+                justifyContent: 'end',
+                alignItems: 'end',
+              }}
+            >
+              <ActionsCardBottom
+                style={{ marginRight: '3rem' }}
+              ></ActionsCardBottom>
+            </ActionsContainer>
+            <ActionsContainer
+              style={{
+                display: 'flex',
+                justifyContent: 'end',
+                alignItems: 'end',
+              }}
+            >
+              <ActionsCardBottom
+                style={{ marginRight: '3rem' }}
+              ></ActionsCardBottom>
+            </ActionsContainer>
           </div>
         </ContentSection>
       </HomeSection>
