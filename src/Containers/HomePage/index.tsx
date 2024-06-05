@@ -201,10 +201,26 @@ export default function HomePage() {
           <TitlePage>Nossas Ações</TitlePage>
           <div className="d-flex justify-content-around w-100 mb-5">
             <ActionsContainer>
-              <ActionsCard style={{ marginLeft: '3rem' }}></ActionsCard>
+              <ActionsCard style={{ marginLeft: '3rem' }}>
+                <h3>Ações nas escolas</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  officia labore velit qui ea voluptate nam inventore reiciendis
+                  architecto aut nulla soluta distinctio blanditiis quaerat
+                  voluptatibus reprehenderit cupiditate, perspiciatis maiores?
+                </p>
+              </ActionsCard>
             </ActionsContainer>
             <ActionsContainer style={{ width: '50vw' }}>
-              <ActionsCard style={{ marginLeft: '3rem' }}></ActionsCard>
+              <ActionsCard style={{ marginLeft: '3rem' }}>
+                <h3>Ações nas escolas</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  officia labore velit qui ea voluptate nam inventore reiciendis
+                  architecto aut nulla soluta distinctio blanditiis quaerat
+                  voluptatibus reprehenderit cupiditate, perspiciatis maiores?
+                </p>
+              </ActionsCard>
             </ActionsContainer>
           </div>
           <div className="d-flex justify-content-around w-100">
@@ -216,9 +232,15 @@ export default function HomePage() {
                 alignItems: 'end',
               }}
             >
-              <ActionsCardBottom
-                style={{ marginRight: '3rem' }}
-              ></ActionsCardBottom>
+              <ActionsCardBottom style={{ marginRight: '3rem' }}>
+                <h3>Ações nas escolas</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  officia labore velit qui ea voluptate nam inventore reiciendis
+                  architecto aut nulla soluta distinctio blanditiis quaerat
+                  voluptatibus reprehenderit cupiditate, perspiciatis maiores?
+                </p>
+              </ActionsCardBottom>
             </ActionsContainer>
             <ActionsContainer
               style={{
@@ -227,9 +249,15 @@ export default function HomePage() {
                 alignItems: 'end',
               }}
             >
-              <ActionsCardBottom
-                style={{ marginRight: '3rem' }}
-              ></ActionsCardBottom>
+              <ActionsCardBottom style={{ marginRight: '3rem' }}>
+                <h3>Ações nas escolas</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  officia labore velit qui ea voluptate nam inventore reiciendis
+                  architecto aut nulla soluta distinctio blanditiis quaerat
+                  voluptatibus reprehenderit cupiditate, perspiciatis maiores?
+                </p>
+              </ActionsCardBottom>
             </ActionsContainer>
           </div>
         </ContentSection>

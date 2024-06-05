@@ -283,6 +283,21 @@ export const ActionsContainer = styled.div`
   background: gray;
   width: 35vw;
   height: 50vh;
+  text-align: left;
+
+  h3,
+  p {
+    width: 90%;
+  }
+
+  p {
+    font-size: 1.042vw;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    font-size: 1.823vw;
+  }
 `;
 
 export const ActionsCard = styled.div`
@@ -290,6 +305,9 @@ export const ActionsCard = styled.div`
   width: 20vw;
   border-top: 10px solid ${({ theme }) => theme.colors.white};
   background: ${({ theme }) => theme.colors.darkPrimary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const ActionsCardBottom = styled.div`
@@ -297,4 +315,7 @@ export const ActionsCardBottom = styled.div`
   width: 20vw;
   border-bottom: 10px solid ${({ theme }) => theme.colors.white};
   background: ${({ theme }) => theme.colors.darkPrimary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
