@@ -37,7 +37,7 @@ export const ContentHome = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 35vw;
+  width: 40vw;
   height: 40vh;
   position: absolute;
   left: 26%; /* por exemplo */
