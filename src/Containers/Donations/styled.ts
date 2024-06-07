@@ -80,3 +80,28 @@ export const DonationButton = styled.button`
     background: linear-gradient(to left, #ff5209, #ff0000) border-box;
   }
 `;
+
+export const DonationSection = styled.div`
+  height: fit-content;
+  width: 100%;
+  background: ${({ theme }) => theme.colors.darkPrimary};
+`;
+export const WhyDonate = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background: none;
+  flex-direction: column;
+  color: ${({ theme }) => theme.colors.white};
+  text-align: center;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    width: 40%;
+  }
+  p {
+    width: 40%;
+  }
+`;
