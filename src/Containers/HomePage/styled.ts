@@ -280,7 +280,6 @@ export const Buttons = styled.div`
 `;
 
 export const ActionsContainer = styled.div`
-  background: gray;
   width: 35vw;
   height: 50vh;
   text-align: left;

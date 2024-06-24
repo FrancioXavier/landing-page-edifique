@@ -25,6 +25,11 @@ import test from '@/config/img/elements/test.svg';
 import pcImage from '@/config/img/elements/pc.svg';
 import Head from 'next/head';
 
+import cursinho from '@/config/img/activities/cursinho.svg';
+import solidarias from '@/config/img/activities/acoes-solidarias.svg';
+import escolas from '@/config/img/activities/acoes-escolas.svg';
+import auloes from '@/config/img/activities/auloes.svg';
+
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
   const OPTIONSSPONSORS: EmblaOptionsType = { align: 'start', loop: true };
@@ -200,7 +205,14 @@ export default function HomePage() {
         <ContentSection>
           <TitlePage>Nossas Ações</TitlePage>
           <div className="d-flex justify-content-around w-100 mb-5">
-            <ActionsContainer>
+            <ActionsContainer
+              style={{
+                backgroundImage: `url(${escolas.src})`,
+                backgroundPosition: 'top',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
               <ActionsCard style={{ marginLeft: '3rem' }}>
                 <h3>Ações nas escolas</h3>
                 <p>
@@ -211,9 +223,17 @@ export default function HomePage() {
                 </p>
               </ActionsCard>
             </ActionsContainer>
-            <ActionsContainer style={{ width: '50vw' }}>
+            <ActionsContainer
+              style={{
+                backgroundImage: `url(${cursinho.src})`,
+                backgroundPosition: 'top',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                width: '50vw',
+              }}
+            >
               <ActionsCard style={{ marginLeft: '3rem' }}>
-                <h3>Ações nas escolas</h3>
+                <h3>Curso Edificar</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   officia labore velit qui ea voluptate nam inventore reiciendis
@@ -230,10 +250,14 @@ export default function HomePage() {
                 display: 'flex',
                 justifyContent: 'end',
                 alignItems: 'end',
+                backgroundImage: `url(${solidarias.src})`,
+                backgroundPosition: 'top',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
               }}
             >
               <ActionsCardBottom style={{ marginRight: '3rem' }}>
-                <h3>Ações nas escolas</h3>
+                <h3>Ações Solidárias</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   officia labore velit qui ea voluptate nam inventore reiciendis
@@ -247,10 +271,14 @@ export default function HomePage() {
                 display: 'flex',
                 justifyContent: 'end',
                 alignItems: 'end',
+                backgroundImage: `url(${auloes.src})`,
+                backgroundPosition: 'top',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
               }}
             >
               <ActionsCardBottom style={{ marginRight: '3rem' }}>
-                <h3>Ações nas escolas</h3>
+                <h3>Aulões</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                   officia labore velit qui ea voluptate nam inventore reiciendis
