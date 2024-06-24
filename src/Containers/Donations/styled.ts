@@ -88,20 +88,26 @@ export const DonationSection = styled.div`
 `;
 export const WhyDonate = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   height: 50vh;
   width: 100%;
   background: none;
-  flex-direction: column;
+  flex-direction: row;
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
+
+  div {
+    margin-left: 5rem;
+    width: 50vw;
+  }
 
   h3 {
     font-weight: bold;
     margin-bottom: 1rem;
-    width: 40%;
+    width: 80%;
   }
   p {
-    width: 40%;
+    width: 80%;
   }
 `;
