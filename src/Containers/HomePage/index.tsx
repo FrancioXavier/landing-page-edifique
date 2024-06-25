@@ -203,7 +203,7 @@ export default function HomePage() {
       </HomeSection>
       <HomeSection style={{ height: 'fit-content', marginBottom: '5rem' }}>
         <ContentSection>
-          <TitlePage>Nossas Ações</TitlePage>
+          <TitlePage id="about-us">Nossas Ações</TitlePage>
           <div className="d-flex justify-content-around w-100 mb-5">
             <ActionsContainer
               style={{

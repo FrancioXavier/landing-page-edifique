@@ -33,7 +33,7 @@ export default function Donation() {
           alt="teste"
           style={{
             width: '100%',
-            height: 'fit-content',
+            height: '100vh',
             zIndex: 0,
             position: 'absolute',
           }}
