@@ -31,6 +31,7 @@ import cursinho from '@/config/img/activities/cursinho.svg';
 import solidarias from '@/config/img/activities/acoes-solidarias.svg';
 import escolas from '@/config/img/activities/acoes-escolas.svg';
 import auloes from '@/config/img/activities/auloes.svg';
+import { useEffect, useState } from 'react';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
@@ -38,6 +39,30 @@ export default function HomePage() {
   const SLIDETYPE: string = 'sponsors';
   const slideHistory: string = 'stories';
   const mobile = useMediaQuery('(max-width: 768px)');
+  const [cardStyle, setCardStyle] = useState({
+    color: theme.colors.primary,
+    padding: '0 3rem',
+  });
+
+  const [cardTitle, setCardTitle] = useState({
+    fontSize: '1.8vw',
+  });
+  const [cardText, setCardText] = useState({
+    paddingBottom: '2rem',
+    fontSize: '1vw',
+  });
+
+  useEffect(() => {
+    if (mobile) {
+      setCardStyle({ color: theme.colors.primary, padding: '1rem 1rem' });
+      setCardTitle({ fontSize: '6vw' });
+      setCardText({ paddingBottom: '2rem', fontSize: '3vw' });
+    } else {
+      setCardStyle({ color: theme.colors.primary, padding: '0 3rem' });
+      setCardTitle({ fontSize: '1.8vw' });
+      setCardText({ paddingBottom: '2rem', fontSize: '1vw' });
+    }
+  }, [mobile]);
 
   return (
     <div
@@ -100,28 +125,27 @@ export default function HomePage() {
               <Col>
                 <Card>
                   <Card.Body
-                    className="px-5 text-md-start text-sm-center"
-                    style={{ color: theme.colors.primary }}
+                    className="text-md-start text-sm-center"
+                    style={cardStyle}
                   >
-                    <Image
-                      src={books.src}
-                      width={100}
-                      height={100}
-                      alt="teste"
-                      style={{
-                        width: '5.5vw',
-                        height: '5.5vw',
-                      }}
-                    />
-                    <Card.Title
-                      className="fw-bold"
-                      style={{ fontSize: '1.8vw' }}
-                    >
+                    {mobile ? (
+                      <></>
+                    ) : (
+                      <Image
+                        src={books.src}
+                        width={100}
+                        height={100}
+                        alt="teste"
+                        style={{
+                          width: '5.5vw',
+                          height: '5.5vw',
+                        }}
+                      />
+                    )}
+                    <Card.Title className="fw-bold" style={cardTitle}>
                       Aulas diversas e robustas
                     </Card.Title>
-                    <Card.Text
-                      style={{ paddingBottom: '2rem', fontSize: '1vw' }}
-                    >
+                    <Card.Text className="text-start" style={cardText}>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
@@ -134,29 +158,25 @@ export default function HomePage() {
               </Col>
               <Col>
                 <Card>
-                  <Card.Body
-                    className="px-5"
-                    style={{ color: theme.colors.primary }}
-                  >
-                    <Image
-                      src={test.src}
-                      width={100}
-                      height={100}
-                      alt="teste"
-                      style={{
-                        width: '5.5vw',
-                        height: '5.5vw',
-                      }}
-                    />
-                    <Card.Title
-                      className="fw-bold"
-                      style={{ fontSize: '1.8vw' }}
-                    >
+                  <Card.Body style={cardStyle}>
+                    {mobile ? (
+                      <></>
+                    ) : (
+                      <Image
+                        src={test.src}
+                        width={100}
+                        height={100}
+                        alt="teste"
+                        style={{
+                          width: '5.5vw',
+                          height: '5.5vw',
+                        }}
+                      />
+                    )}
+                    <Card.Title className="fw-bold" style={cardTitle}>
                       Simulados para vestibulares
                     </Card.Title>
-                    <Card.Text
-                      style={{ paddingBottom: '2rem', fontSize: '1vw' }}
-                    >
+                    <Card.Text className="text-start" style={cardText}>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis
@@ -169,29 +189,25 @@ export default function HomePage() {
               </Col>
               <Col>
                 <Card>
-                  <Card.Body
-                    className="px-5"
-                    style={{ color: theme.colors.primary }}
-                  >
-                    <Image
-                      src={pcImage.src}
-                      width={100}
-                      height={100}
-                      alt="teste"
-                      style={{
-                        width: '5.5vw',
-                        height: '5.5vw',
-                      }}
-                    />
-                    <Card.Title
-                      className="fw-bold"
-                      style={{ fontSize: '1.8vw' }}
-                    >
+                  <Card.Body style={cardStyle}>
+                    {mobile ? (
+                      <></>
+                    ) : (
+                      <Image
+                        src={pcImage.src}
+                        width={100}
+                        height={100}
+                        alt="teste"
+                        style={{
+                          width: '5.5vw',
+                          height: '5.5vw',
+                        }}
+                      />
+                    )}
+                    <Card.Title className="fw-bold" style={cardTitle}>
                       Estudo com supervisão de monitores
                     </Card.Title>
-                    <Card.Text
-                      style={{ paddingBottom: '2rem', fontSize: '1vw' }}
-                    >
+                    <Card.Text className="text-start" style={cardText}>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Enim a quo nemo dolore laudantium ducimus sunt quod minima
                       cupiditate veritatis. Distinctio voluptatem perspiciatis

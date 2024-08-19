@@ -39,6 +39,7 @@ export const Nav = styled.nav`
 
   .categoriesButton {
     display: none;
+    z-index: 99999999;
   }
   a {
     color: #fff;

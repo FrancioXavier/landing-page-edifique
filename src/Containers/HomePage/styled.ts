@@ -145,7 +145,6 @@ export const ContentSection = styled.div`
   justify-content: center;
   height: fit-content;
   width: 100%;
-  z-index: 1;
 
   .cardSection {
     width: 90vw;
@@ -194,23 +193,15 @@ export const ContentSection = styled.div`
     }
   }
 
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 768px) {
     h1 {
-      font-size: 20px;
+      font-size: 8vw;
     }
 
     h2 {
-      font-size: 15px;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    h1 {
-      font-size: 15px;
-    }
-
-    h2 {
-      font-size: 10px;
+      width: 60vw;
+      text-align: center;
+      font-size: 4vw;
     }
   }
 `;

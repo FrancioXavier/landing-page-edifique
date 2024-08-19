@@ -110,7 +110,6 @@ export const CarouselSlider = styled.div`
       width: 80%;
       height: 4px;
       position: absolute;
-      z-index: -1;
     }
     .lineSubtitle {
       width: 80%;
