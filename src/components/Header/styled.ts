@@ -31,6 +31,10 @@ export const Nav = styled.nav`
         linear-gradient(#000 0 0) padding-box,
         linear-gradient(to left, #ff5209, #ff0000) border-box;
     }
+
+    @media only screen and (max-width: 768px) {
+      background: none;
+    }
   }
 
   .categoriesButton {

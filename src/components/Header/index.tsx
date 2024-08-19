@@ -14,9 +14,11 @@ export const Header = () => {
               <div
                 className="position-absolute"
                 style={{
-                  width: '30%',
+                  width: '50%',
                   height: '100%',
                   top: 0,
+                  left: '50%',
+                  transform: 'translateX(-50%)',
                 }}
               >
                 <Image

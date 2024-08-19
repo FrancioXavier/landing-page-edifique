@@ -12,6 +12,7 @@ import {
 // import background from '@/config/img/bgHome.svg';
 import { Header } from '@/components/Header';
 import backgroundGeral from '@/config/img/new-bg.svg';
+import mobilebg from '@/config/img/mobile/mobile-bg.svg';
 import { EmblaOptionsType } from 'embla-carousel';
 import Carousel from '@/components/Carousel';
 import Image from 'next/image';
@@ -24,6 +25,7 @@ import books from '@/config/img/elements/books.svg';
 import test from '@/config/img/elements/test.svg';
 import pcImage from '@/config/img/elements/pc.svg';
 import Head from 'next/head';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import cursinho from '@/config/img/activities/cursinho.svg';
 import solidarias from '@/config/img/activities/acoes-solidarias.svg';
@@ -35,6 +37,8 @@ export default function HomePage() {
   const OPTIONSSPONSORS: EmblaOptionsType = { align: 'start', loop: true };
   const SLIDETYPE: string = 'sponsors';
   const slideHistory: string = 'stories';
+  const mobile = useMediaQuery('(max-width: 768px)');
+
   return (
     <div
       style={{
@@ -49,16 +53,17 @@ export default function HomePage() {
       <HomeSection>
         <Header />
         <Image
-          src={backgroundGeral.src}
+          src={mobile ? mobilebg.src : backgroundGeral.src}
           height={100}
           width={100}
           priority
           alt="teste"
           style={{
             width: '100%',
-            height: 'fit-content',
+            height: `${mobile ? '100vh' : 'fit-content'}`,
             zIndex: 0,
             position: 'absolute',
+            objectFit: 'cover',
           }}
         />
         <ContentHome style={{ zIndex: 1 }}>

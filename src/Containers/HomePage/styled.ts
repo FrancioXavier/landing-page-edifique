@@ -53,6 +53,12 @@ export const ContentHome = styled.div`
     @media only screen and (max-width: 1000px) {
       font-size: 15px;
     }
+
+    @media only screen and (max-width: 768px) {
+      width: 100vw;
+      margin-bottom: 1rem;
+      font-size: 5.333vw;
+    }
   }
   h2 {
     font-size: 70px;
@@ -61,6 +67,11 @@ export const ContentHome = styled.div`
 
     @media only screen and (max-width: 900px) {
       font-size: 28px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -87,6 +98,10 @@ export const ContentHome = styled.div`
       &:hover {
         background: linear-gradient(to left, #ff5209, #ff0000) border-box;
       }
+
+      @media only screen and (max-width: 768px) {
+        margin-right: 1rem;
+      }
     }
   }
   @media only screen and (max-width: 1550px) {
@@ -103,27 +118,20 @@ export const ContentHome = styled.div`
     top: 45%;
 
     h2 {
-      font-size: 35px;
+      width: 85vw;
+      font-size: 8vw;
     }
   }
 
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     h1 {
-      font-size: 20px;
-    }
-
-    h2 {
-      font-size: 15px;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    h1 {
-      font-size: 15px;
-    }
-
-    h2 {
-      font-size: 10px;
+      font-size: 5.333vw;
     }
   }
 `;
