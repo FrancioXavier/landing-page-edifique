@@ -2,6 +2,7 @@
 import {
   ActionsCard,
   ActionsCardBottom,
+  ActionsCards,
   ActionsContainer,
   CarouselSection,
   ContentHome,
@@ -117,7 +118,7 @@ export default function HomePage() {
         </ContentHome>
       </HomeSection>
       <HomeSection style={{ height: 'fit-content', marginBottom: '8rem' }}>
-        <ContentSection style={{ zIndex: 1 }}>
+        <ContentSection>
           <h1>METODOLOGIA DE ENSINO</h1>
           <h2>Conheça nosso sistema de aprendizagem</h2>
           <div className="cardSection">
@@ -224,8 +225,13 @@ export default function HomePage() {
       </HomeSection>
       <HomeSection style={{ height: 'fit-content', marginBottom: '5rem' }}>
         <ContentSection>
-          <TitlePage id="about-us">Nossas Ações</TitlePage>
-          <div className="d-flex justify-content-around w-100 mb-5">
+          <TitlePage
+            id="about-us"
+            style={mobile ? { fontSize: '8vw', marginBottom: '2rem' } : {}}
+          >
+            Nossas Ações
+          </TitlePage>
+          <ActionsCards>
             <ActionsContainer
               style={{
                 backgroundImage: `url(${escolas.src})`,
@@ -234,7 +240,7 @@ export default function HomePage() {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <ActionsCard style={{ marginLeft: '3rem' }}>
+              <ActionsCard style={mobile ? {} : { marginLeft: '3rem' }}>
                 <h3>Ações nas escolas</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -250,10 +256,21 @@ export default function HomePage() {
                 backgroundPosition: 'top',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                width: '50vw',
+                width: `${mobile ? '100%' : '50vw'}`,
+                textAlign: 'right',
               }}
             >
-              <ActionsCard style={{ marginLeft: '3rem' }}>
+              <ActionsCard
+                style={
+                  mobile
+                    ? {
+                        marginLeft: 'auto',
+                        borderLeft: 'none',
+                        borderRight: '10px solid #fff',
+                      }
+                    : { marginLeft: '3rem' }
+                }
+              >
                 <h3>Curso Edificar</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -263,11 +280,11 @@ export default function HomePage() {
                 </p>
               </ActionsCard>
             </ActionsContainer>
-          </div>
-          <div className="d-flex justify-content-around w-100">
+          </ActionsCards>
+          <ActionsCards>
             <ActionsContainer
               style={{
-                width: '50vw',
+                width: `${mobile ? '100%' : '50vw'}`,
                 display: 'flex',
                 justifyContent: 'end',
                 alignItems: 'end',
@@ -277,7 +294,11 @@ export default function HomePage() {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <ActionsCardBottom style={{ marginRight: '3rem' }}>
+              <ActionsCardBottom
+                style={
+                  mobile ? { marginRight: 'auto' } : { marginRight: '3rem' }
+                }
+              >
                 <h3>Ações Solidárias</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -298,7 +319,20 @@ export default function HomePage() {
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <ActionsCardBottom style={{ marginRight: '3rem' }}>
+              <ActionsCardBottom
+                style={
+                  mobile
+                    ? {
+                        marginLeft: 'auto',
+                        borderLeft: 'none',
+                        borderRight: '10px solid #fff',
+                        textAlign: 'right',
+                      }
+                    : {
+                        marginRight: '3rem',
+                      }
+                }
+              >
                 <h3>Aulões</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -308,7 +342,7 @@ export default function HomePage() {
                 </p>
               </ActionsCardBottom>
             </ActionsContainer>
-          </div>
+          </ActionsCards>
         </ContentSection>
       </HomeSection>
       <CarouselSection style={{ zIndex: 1 }}>

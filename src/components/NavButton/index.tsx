@@ -41,10 +41,10 @@ function NavButton() {
             }}
           >
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/">Quem somos</Nav.Link>
-              <Nav.Link href="/">Inspirações</Nav.Link>
-              <Nav.Link href="/">Doações</Nav.Link>
-              <Nav.Link href="/">Nossa equipe</Nav.Link>
+              <Nav.Link href="/#about-us">Quem somos</Nav.Link>
+              <Nav.Link href="/#inspirations">Inspirações</Nav.Link>
+              <Nav.Link href="/doacoes">Doações</Nav.Link>
+              <Nav.Link href="/nossa-equipe">Nossa equipe</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

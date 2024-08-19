@@ -296,6 +296,19 @@ export const ActionsContainer = styled.div`
     margin-top: 1rem;
     font-size: 1.823vw;
   }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    height: 25vh;
+
+    h3 {
+      font-size: 5vw;
+    }
+
+    p {
+      font-size: 1.75vw;
+    }
+  }
 `;
 
 export const ActionsCard = styled.div`
@@ -306,6 +319,13 @@ export const ActionsCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 100%;
+    border-top: none;
+    border-left: 10px solid ${({ theme }) => theme.colors.white};
+    width: 50vw;
+  }
 `;
 
 export const ActionsCardBottom = styled.div`
@@ -316,4 +336,25 @@ export const ActionsCardBottom = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 100%;
+    border-bottom: none;
+    border-left: 10px solid ${({ theme }) => theme.colors.white};
+    width: 50vw;
+  }
+`;
+
+export const ActionsCards = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 `;
