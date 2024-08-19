@@ -3,8 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import NavButton from '../NavButton';
 import edifiqueLogo from '@/config/img/edifique-logo.svg';
+import { useMediaQuery } from '@mui/material';
 
 export const Header = () => {
+  const mobile = useMediaQuery('(max-width: 768px)');
   return (
     <>
       <Nav className="" style={{ zIndex: 1 }}>
@@ -14,11 +16,11 @@ export const Header = () => {
               <div
                 className="position-absolute"
                 style={{
-                  width: '50%',
+                  width: `${mobile ? '50%' : '30%'}`,
                   height: '100%',
                   top: 0,
-                  left: '50%',
-                  transform: 'translateX(-50%)',
+                  left: `${mobile ? '50%' : null}`,
+                  transform: `${mobile ? 'translateX(-50%)' : null}`,
                 }}
               >
                 <Image
