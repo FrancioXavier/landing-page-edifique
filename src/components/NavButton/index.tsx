@@ -26,11 +26,15 @@ function NavButton() {
           <Offcanvas.Header
             closeButton
             style={{
-              backgroundColor: theme.colors.black,
+              background:
+                'linear-gradient(to left, #ff5209, #ff0000) border-box',
               color: theme.colors.white,
             }}
           >
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${false}`}>
+            <Offcanvas.Title
+              id={`offcanvasNavbarLabel-expand-${false}`}
+              style={{ fontWeight: 'bold' }}
+            >
               EDIFIQUE AÇÕES
             </Offcanvas.Title>
           </Offcanvas.Header>
