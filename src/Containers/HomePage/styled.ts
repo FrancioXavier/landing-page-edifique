@@ -27,6 +27,7 @@ export const TitlePage = styled.h2`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+    font-size: 8vw;
   }
 `;
 

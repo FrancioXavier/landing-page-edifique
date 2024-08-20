@@ -91,6 +91,11 @@ export const CarouselSlider = styled.div`
       justify-content: center;
       border-radius: 5px;
       margin-left: 2rem;
+
+      @media only screen and (max-width: 768px) {
+        width: 15vw;
+        margin-left: 5vw;
+      }
     }
     .xiloHistory__bar:after {
       box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);

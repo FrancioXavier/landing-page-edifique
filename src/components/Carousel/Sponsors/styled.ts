@@ -13,6 +13,11 @@ export const CarouselContainer = styled.div`
   background-color: #ff5e20;
   padding: 3rem 5rem;
   border: 1.5px solid #893311;
+
+  @media only screen and (max-width: 768px) {
+    border: none;
+    padding: 1rem;
+  }
 `;
 
 export const LogoSponsor = styled.div`
