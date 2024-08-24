@@ -17,9 +17,6 @@ export const CarouselSlider = styled.div`
     @media only screen and (max-width: 768px) {
       width: 99vw;
     }
-    @media only screen and (max-width: 668px) {
-      width: 100%;
-    }
   }
 
   .xiloHistoryCarousel {
@@ -67,9 +64,11 @@ export const CarouselSlider = styled.div`
       display: flex;
       align-items: center;
       content: '';
+      border: 1px solid ${theme.colors.black};
     }
     .xiloHistory__dot--selected:after {
-      background: ${theme.colors.primary};
+      background: linear-gradient(to left, #ff5209, #ff0000) border-box;
+      border: 1px solid ${theme.colors.black};
     }
 
     .xiloHistory__bar {

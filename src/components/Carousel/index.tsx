@@ -76,6 +76,30 @@ const Carousel: React.FC<PropType> = (props) => {
             <div className="storiesCarousel">
               <Stories />
             </div>
+            <div className="xiloHistory__dots">
+              {scrollSnaps.map((_, index) => (
+                <>
+                  <DotButton
+                    id={index.toString()}
+                    key={index}
+                    onClick={() => {
+                      onDotButtonClick(index);
+                    }}
+                    className={'xiloHistory__dot'
+                      .concat(
+                        index === selectedIndex
+                          ? ' xiloHistory__dot--selected'
+                          : '',
+                      )
+                      .concat(
+                        index < selectedIndex
+                          ? ` backOrange ${selectedIndex}`
+                          : '',
+                      )}
+                  />
+                </>
+              ))}
+            </div>
           </CarouselSlider>
           <TitleContent>
             <TitlePage>

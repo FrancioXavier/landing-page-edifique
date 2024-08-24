@@ -2,13 +2,15 @@
 import Image from 'next/image';
 import { CarouselContainer } from './styled';
 import quotMarks from '@/config/img/elements/element3.svg';
-// import traits from '@/config/img/elements/element2.svg';
 
 export default function Stories() {
   return (
     <>
       <CarouselContainer>
-        <div className="d-flex">
+        <div
+          className="d-flex"
+          style={{ flexDirection: 'column', alignItems: 'center' }}
+        >
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -32,7 +34,12 @@ export default function Stories() {
             </p>
           </div>
         </div>
-        <div className="d-flex">
+      </CarouselContainer>
+      <CarouselContainer>
+        <div
+          className="d-flex"
+          style={{ flexDirection: 'column', alignItems: 'center' }}
+        >
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -60,7 +67,10 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div className="d-flex">
+        <div
+          className="d-flex"
+          style={{ flexDirection: 'column', alignItems: 'center' }}
+        >
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -84,7 +94,12 @@ export default function Stories() {
             </p>
           </div>
         </div>
-        <div className="d-flex">
+      </CarouselContainer>
+      <CarouselContainer>
+        <div
+          className="d-flex"
+          style={{ flexDirection: 'column', alignItems: 'center' }}
+        >
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -112,7 +127,10 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div className="d-flex">
+        <div
+          className="d-flex"
+          style={{ flexDirection: 'column', alignItems: 'center' }}
+        >
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -136,7 +154,12 @@ export default function Stories() {
             </p>
           </div>
         </div>
-        <div className="d-flex">
+      </CarouselContainer>
+      <CarouselContainer>
+        <div
+          className="d-flex"
+          style={{ flexDirection: 'column', alignItems: 'center' }}
+        >
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">

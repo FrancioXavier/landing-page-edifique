@@ -7,7 +7,7 @@ export const CarouselContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex: 0 0 100%;
+  flex: 0 0 55%;
   min-width: 0;
   width: 95vw;
   height: fit-content;
@@ -28,18 +28,31 @@ export const CarouselContainer = styled.div`
       background-size: cover;
       background-repeat: no-repeat;
       margin-bottom: 2rem;
+
+      @media only screen and (max-width: 768px) {
+        height: 60vw;
+        width: 60vw;
+      }
     }
 
     p {
       font-size: 1.563vw;
       color: ${({ theme }) => theme.colors.white};
       margin-bottom: 0;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 6vw;
+      }
     }
 
     .sub {
       text-align: center;
       font-size: 1.2vw;
       color: ${({ theme }) => theme.colors.white};
+
+      @media only screen and (max-width: 768px) {
+        font-size: 3vw;
+      }
     }
   }
 
@@ -59,44 +72,17 @@ export const CarouselContainer = styled.div`
       color: ${({ theme }) => theme.colors.white};
     }
 
-    @media only screen and (max-width: 408px) {
+    @media only screen and (max-width: 768px) {
+      width: 70%;
       p {
-        line-height: 25px;
-        width: 90%;
-      }
-    }
-
-    @media only screen and (max-width: 300px) {
-      p {
-        line-height: 20px;
-        width: 90%;
-      }
-    }
-
-    @media only screen and (max-width: 280px) {
-      p {
-        font-size: 13px;
-        line-height: 20px;
-        width: 100%;
+        font-size: 4vw;
       }
     }
   }
 
   @media only screen and (max-width: 668px) {
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    .photo {
-      width: 100%;
-      height: 50%;
-    }
-    .text {
-      width: 100%;
-      height: 50%;
-    }
+    flex: 0 0 100%;
+    overflow: hidden;
   }
 `;
 

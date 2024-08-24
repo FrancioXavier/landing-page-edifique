@@ -28,6 +28,7 @@ export const TitlePage = styled.h2`
   @media only screen and (max-width: 768px) {
     text-align: center;
     font-size: 8vw;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -276,6 +277,10 @@ export const Buttons = styled.div`
     border: none;
     background: none;
     color: ${({ theme }) => theme.colors.white};
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
