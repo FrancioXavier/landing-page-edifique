@@ -34,6 +34,25 @@ export const ContentPage = styled.div`
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 5.333vw;
+    }
+
+    h2 {
+      font-size: 5vw;
+      text-align: center;
+    }
+  }
+
   .icons {
     display: flex;
     margin-top: 3.5rem;
@@ -79,6 +98,11 @@ export const DonationButton = styled.button`
   &:hover {
     background: linear-gradient(to left, #ff5209, #ff0000) border-box;
   }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 5vw;
+    padding: 15px;
+  }
 `;
 
 export const DonationSection = styled.div`
@@ -109,5 +133,25 @@ export const WhyDonate = styled.div`
   }
   p {
     width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    height: fit-content;
+
+    div {
+      height: auto;
+      width: 90%;
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
   }
 `;
