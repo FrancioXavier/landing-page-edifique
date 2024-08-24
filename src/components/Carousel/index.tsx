@@ -61,6 +61,7 @@ const Carousel: React.FC<PropType> = (props) => {
                         ? ` backOrange ${selectedIndex}`
                         : '',
                     )}
+                  aria-label={`sponsor-${index}`}
                 />
               </>
             ))}
@@ -115,10 +116,15 @@ const Carousel: React.FC<PropType> = (props) => {
                 className="prev"
                 onClick={scrollPrev}
                 style={{ marginRight: '2rem' }}
+                aria-label="previus-story-card"
               >
                 <FaArrowLeftLong size={50} />
               </button>
-              <button className="next" onClick={scrollNext}>
+              <button
+                className="next"
+                onClick={scrollNext}
+                aria-label="next-story-card"
+              >
                 <FaArrowRightLong size={50} />
               </button>
             </Buttons>

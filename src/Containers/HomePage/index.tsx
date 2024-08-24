@@ -107,6 +107,7 @@ export default function HomePage() {
                 href="https://www.instagram.com/edifiqueacoes/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Instagram do Edifique Ações"
               >
                 <FaInstagram size={30} />
               </a>
@@ -116,6 +117,7 @@ export default function HomePage() {
                 href="https://www.facebook.com/EdifiqueAcoes/?locale=pt_BR"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Facebook do Edifique Ações"
               >
                 <FaFacebookF size={30} />
               </a>
