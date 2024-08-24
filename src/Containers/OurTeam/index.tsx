@@ -3,7 +3,7 @@ import { Content, ContainerCards, Cards } from './styled';
 import { TitlePage } from '../HomePage/styled';
 import bruno from '@/config/img/stories/bruno.svg';
 import { CardComponent } from '@/components/Card';
-import { Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Head from 'next/head';
 import ScrollToTopButton from '@/components/ScrollTop/ScrollToTopButton';
 
@@ -21,26 +21,58 @@ export default function OurTeam() {
           <Cards>
             <Container>
               <Row className="gx-0">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
             </Container>
           </Cards>
@@ -51,33 +83,73 @@ export default function OurTeam() {
           <Cards>
             <Container>
               <Row className="gx-0">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
               <Row className="gx-0 justify-content-center align-items-center">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
             </Container>
           </Cards>
@@ -88,33 +160,73 @@ export default function OurTeam() {
           <Cards>
             <Container>
               <Row className="gx-0">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
               <Row className="gx-0 justify-content-center align-items-center">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
             </Container>
           </Cards>
@@ -124,33 +236,73 @@ export default function OurTeam() {
           <Cards>
             <Container>
               <Row className="gx-0">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
               <Row className="gx-0 justify-content-center align-items-center">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
             </Container>
           </Cards>
@@ -161,33 +313,73 @@ export default function OurTeam() {
           <Cards>
             <Container>
               <Row className="gx-0">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
               <Row className="gx-0 justify-content-center align-items-center">
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
-                <CardComponent
-                  img={bruno.src}
-                  title="Bruno Presidente"
-                  subtitle="Presidente"
-                />
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
+                <Col
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <CardComponent
+                    img={bruno.src}
+                    title="Bruno Presidente"
+                    subtitle="Presidente"
+                  />
+                </Col>
               </Row>
             </Container>
           </Cards>

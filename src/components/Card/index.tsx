@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Card, CardName, SubTitle, Title } from './styled';
+import { useMediaQuery } from '@mui/material';
 
 export function CardComponent(props: {
   img: string;
@@ -7,6 +8,8 @@ export function CardComponent(props: {
   subtitle: string;
 }) {
   const { img, title, subtitle } = props;
+
+  const mobile = useMediaQuery('(max-width: 768px)');
   return (
     <Card>
       <Image
@@ -16,8 +19,8 @@ export function CardComponent(props: {
         alt="teste"
         style={{
           position: 'absolute',
-          height: '40vh',
-          width: '15vw',
+          height: mobile ? '25vh' : '40vh',
+          width: mobile ? '25vw' : '15vw',
           objectFit: 'cover',
         }}
       />
