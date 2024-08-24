@@ -49,12 +49,8 @@ export const ContentHome = styled.div`
     top: 40%;
   }
   h1 {
-    font-size: 30px;
+    font-size: 1.563vw;
     margin-bottom: 1.5rem;
-
-    @media only screen and (max-width: 1000px) {
-      font-size: 15px;
-    }
 
     @media only screen and (max-width: 768px) {
       width: 100vw;
@@ -63,13 +59,9 @@ export const ContentHome = styled.div`
     }
   }
   h2 {
-    font-size: 70px;
+    font-size: 3.646vw;
     font-weight: bold;
     text-align: left;
-
-    @media only screen and (max-width: 900px) {
-      font-size: 28px;
-    }
 
     @media only screen and (max-width: 768px) {
       width: 100%;
@@ -106,23 +98,9 @@ export const ContentHome = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 1550px) {
-    h1 {
-      font-size: 20px;
-    }
-
-    h2 {
-      font-size: 50px;
-    }
-  }
 
   @media only screen and (max-width: 1300px) {
     top: 45%;
-
-    h2 {
-      width: 85vw;
-      font-size: 8vw;
-    }
   }
 
   @media only screen and (max-width: 768px) {

@@ -93,7 +93,6 @@ export default function HomePage() {
             width: '100%',
             height: `${mobile ? '100vh' : 'fit-content'}`,
             zIndex: 0,
-            position: 'absolute',
             objectFit: 'cover',
           }}
         />
