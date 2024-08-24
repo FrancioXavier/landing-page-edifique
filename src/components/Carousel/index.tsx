@@ -11,6 +11,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { TitleContent } from './Stories/styled';
 import Image from 'next/image';
 import heart from '@/config/img/elements/element1.svg';
+import { useMediaQuery } from '@mui/material';
 
 type PropType = {
   slideType: string;
@@ -20,6 +21,7 @@ type PropType = {
 const Carousel: React.FC<PropType> = (props) => {
   const { slideType, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const mobile = useMediaQuery('(max-width: 768px)');
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -76,30 +78,32 @@ const Carousel: React.FC<PropType> = (props) => {
             <div className="storiesCarousel">
               <Stories />
             </div>
-            <div className="xiloHistory__dots">
-              {scrollSnaps.map((_, index) => (
-                <>
-                  <DotButton
-                    id={index.toString()}
-                    key={index}
-                    onClick={() => {
-                      onDotButtonClick(index);
-                    }}
-                    className={'xiloHistory__dot'
-                      .concat(
-                        index === selectedIndex
-                          ? ' xiloHistory__dot--selected'
-                          : '',
-                      )
-                      .concat(
-                        index < selectedIndex
-                          ? ` backOrange ${selectedIndex}`
-                          : '',
-                      )}
-                  />
-                </>
-              ))}
-            </div>
+            {mobile ? (
+              <div className="xiloHistory__dots">
+                {scrollSnaps.map((_, index) => (
+                  <>
+                    <DotButton
+                      id={index.toString()}
+                      key={index}
+                      onClick={() => {
+                        onDotButtonClick(index);
+                      }}
+                      className={'xiloHistory__dot'
+                        .concat(
+                          index === selectedIndex
+                            ? ' xiloHistory__dot--selected'
+                            : '',
+                        )
+                        .concat(
+                          index < selectedIndex
+                            ? ` backOrange ${selectedIndex}`
+                            : '',
+                        )}
+                    />
+                  </>
+                ))}
+              </div>
+            ) : null}
           </CarouselSlider>
           <TitleContent>
             <TitlePage>

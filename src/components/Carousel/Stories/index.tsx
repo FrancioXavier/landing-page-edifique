@@ -2,15 +2,25 @@
 import Image from 'next/image';
 import { CarouselContainer } from './styled';
 import quotMarks from '@/config/img/elements/element3.svg';
+import { useMediaQuery } from '@mui/material';
+import { useEffect, useState } from 'react';
 
 export default function Stories() {
+  const mobile = useMediaQuery('(max-width: 768px)');
+  const [containerResponsive, setContainerResponsive] = useState({});
+
+  useEffect(() => {
+    if (mobile) {
+      setContainerResponsive({ flexDirection: 'column', alignItems: 'center' });
+    } else {
+      setContainerResponsive({});
+    }
+  }, [mobile]);
+
   return (
     <>
       <CarouselContainer>
-        <div
-          className="d-flex"
-          style={{ flexDirection: 'column', alignItems: 'center' }}
-        >
+        <div className="d-flex" style={containerResponsive}>
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -36,10 +46,7 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div
-          className="d-flex"
-          style={{ flexDirection: 'column', alignItems: 'center' }}
-        >
+        <div className="d-flex" style={containerResponsive}>
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -67,10 +74,7 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div
-          className="d-flex"
-          style={{ flexDirection: 'column', alignItems: 'center' }}
-        >
+        <div className="d-flex" style={containerResponsive}>
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -96,10 +100,7 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div
-          className="d-flex"
-          style={{ flexDirection: 'column', alignItems: 'center' }}
-        >
+        <div className="d-flex" style={containerResponsive}>
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -127,10 +128,7 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div
-          className="d-flex"
-          style={{ flexDirection: 'column', alignItems: 'center' }}
-        >
+        <div className="d-flex" style={containerResponsive}>
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
@@ -156,10 +154,7 @@ export default function Stories() {
         </div>
       </CarouselContainer>
       <CarouselContainer>
-        <div
-          className="d-flex"
-          style={{ flexDirection: 'column', alignItems: 'center' }}
-        >
+        <div className="d-flex" style={containerResponsive}>
           <div className="photoContainer">
             <div className="photo"></div>
             <div className="personName">
