@@ -31,7 +31,13 @@ export default function Donation() {
 
   return (
     <>
-      <Head>Edifique Ações - Doações</Head>
+      <Head>
+        Edifique Ações - Doações
+        <meta
+          name="description"
+          content="Contribua para o nosso projeto que apoia alunos e pessoas em situação de vulnerabilidade. Suas doações ajudam a fornecer recursos essenciais, oportunidades educacionais e suporte para aqueles que mais precisam. Faça a diferença hoje!"
+        />
+      </Head>
       <HomeSection
         style={{
           backgroundColor: theme.colors.black,

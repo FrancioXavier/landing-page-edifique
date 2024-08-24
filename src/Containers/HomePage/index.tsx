@@ -76,6 +76,10 @@ export default function HomePage() {
     >
       <Head>
         <title>Edifique Ações - Home</title>
+        <meta
+          name="description"
+          content="Descubra como nosso projeto está transformando vidas ao apoiar alunos e pessoas em situação de vulnerabilidade. Oferecemos educação, recursos e suporte para construir um futuro melhor. Junte-se a nós nessa missão de mudança social."
+        />
       </Head>
       <HomeSection>
         <Header />

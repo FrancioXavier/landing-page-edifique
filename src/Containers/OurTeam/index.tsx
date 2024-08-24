@@ -12,6 +12,10 @@ export default function OurTeam() {
     <>
       <Head>
         <title>Edifique Ações - equipe</title>
+        <meta
+          name="description"
+          content="Conheça a equipe dedicada por trás do nosso projeto, comprometida em apoiar alunos e pessoas em situação de vulnerabilidade. Descubra as histórias, experiências e paixões que movem nossa missão de fazer a diferença."
+        />
       </Head>
       <Header />
       <ScrollToTopButton />
