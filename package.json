@@ -2,7 +2,7 @@
   "name": "projetox-next",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://francioxavier.github.io/landing-page-edifique",
+  "homepage": "./",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
