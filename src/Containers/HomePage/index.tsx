@@ -143,7 +143,7 @@ export default function HomePage() {
                         src={books.src}
                         width={100}
                         height={100}
-                        alt="teste"
+                        alt="Imagem ilustrando pilha de livros"
                         style={{
                           width: '5.5vw',
                           height: '5.5vw',
@@ -174,7 +174,7 @@ export default function HomePage() {
                         src={test.src}
                         width={100}
                         height={100}
-                        alt="teste"
+                        alt="Imagem ilustrando prova"
                         style={{
                           width: '5.5vw',
                           height: '5.5vw',
@@ -205,7 +205,7 @@ export default function HomePage() {
                         src={pcImage.src}
                         width={100}
                         height={100}
-                        alt="teste"
+                        alt="Image ilustrando o card de estudo com supervisão"
                         style={{
                           width: '5.5vw',
                           height: '5.5vw',

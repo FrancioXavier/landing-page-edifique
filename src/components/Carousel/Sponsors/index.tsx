@@ -19,7 +19,7 @@ export default function Sponsors() {
               width: '100%',
               height: '100%',
             }}
-            alt="teste"
+            alt="Imagem com logo da empresa fisk"
           />
         </LogoSponsor>
       </CarouselContainer>
@@ -34,7 +34,7 @@ export default function Sponsors() {
               width: '100%',
               height: '100%',
             }}
-            alt="teste"
+            alt="Imagem com logo da empresa Me Salva!"
           />
         </LogoSponsor>
       </CarouselContainer>
@@ -49,7 +49,7 @@ export default function Sponsors() {
               width: '100%',
               height: '100%',
             }}
-            alt="teste"
+            alt="Imagem com logo da organização Brasil Cursinhos"
           />
         </LogoSponsor>
       </CarouselContainer>
@@ -64,7 +64,7 @@ export default function Sponsors() {
               width: '100%',
               height: '100%',
             }}
-            alt="teste"
+            alt="Imagem com logo da empresa Arco"
           />
         </LogoSponsor>
       </CarouselContainer>
