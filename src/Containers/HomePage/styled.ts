@@ -305,10 +305,10 @@ export const ActionsContainer = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    height: 25vh;
+    height: 40vh;
 
     h3 {
-      font-size: 5vw;
+      font-size: 6vw;
     }
 
     p {
@@ -331,6 +331,10 @@ export const ActionsCard = styled.div`
     border-top: none;
     border-left: 10px solid ${({ theme }) => theme.colors.white};
     width: 50vw;
+
+    p {
+      font-size: 2.5vw;
+    }
   }
 `;
 
@@ -348,6 +352,10 @@ export const ActionsCardBottom = styled.div`
     border-bottom: none;
     border-left: 10px solid ${({ theme }) => theme.colors.white};
     width: 50vw;
+
+    p {
+      font-size: 2.5vw;
+    }
   }
 `;
 
