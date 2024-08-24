@@ -5,6 +5,7 @@ import bruno from '@/config/img/stories/bruno.svg';
 import { CardComponent } from '@/components/Card';
 import { Container, Row } from 'react-bootstrap';
 import Head from 'next/head';
+import ScrollToTopButton from '@/components/ScrollTop/ScrollToTopButton';
 
 export default function OurTeam() {
   return (
@@ -13,6 +14,7 @@ export default function OurTeam() {
         <title>Edifique Ações - equipe</title>
       </Head>
       <Header />
+      <ScrollToTopButton />
       <Content>
         <ContainerCards>
           <TitlePage>Diretores</TitlePage>

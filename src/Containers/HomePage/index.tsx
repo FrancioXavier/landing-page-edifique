@@ -33,6 +33,7 @@ import solidarias from '@/config/img/activities/acoes-solidarias.svg';
 import escolas from '@/config/img/activities/acoes-escolas.svg';
 import auloes from '@/config/img/activities/auloes.svg';
 import { useEffect, useState } from 'react';
+import ScrollToTopButton from '@/components/ScrollTop/ScrollToTopButton';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
@@ -92,6 +93,7 @@ export default function HomePage() {
             objectFit: 'cover',
           }}
         />
+        <ScrollToTopButton />
         <ContentHome style={{ zIndex: 1 }}>
           <h1>BEM VINDO AO EDIFIQUE AÇÕES</h1>
           <h2>O melhor cursinho gratuito para o ENEM</h2>

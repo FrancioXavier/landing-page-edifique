@@ -18,6 +18,7 @@ import solidaria from '@/config/img/donation/solidaria.svg';
 import { useMediaQuery } from '@mui/material';
 import QRCode from 'qrcode.react';
 import { useState } from 'react';
+import ScrollToTopButton from '@/components/ScrollTop/ScrollToTopButton';
 
 export default function Donation() {
   const mobile = useMediaQuery('(max-width: 768px)');
@@ -50,6 +51,7 @@ export default function Donation() {
             position: 'absolute',
           }}
         />
+        <ScrollToTopButton />
         <ContentPage style={{ zIndex: 1 }}>
           <h1>AJUDE O EDIFIQUE AÇÕES</h1>
           <h2>

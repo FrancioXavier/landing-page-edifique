@@ -16,11 +16,11 @@ export const Header = () => {
               <div
                 className="position-absolute"
                 style={{
-                  width: `${mobile ? '50%' : '30%'}`,
+                  width: mobile ? '50%' : '30%',
                   height: '100%',
                   top: 0,
-                  left: `${mobile ? '50%' : null}`,
-                  transform: `${mobile ? 'translateX(-50%)' : null}`,
+                  left: mobile ? '50%' : 0,
+                  transform: mobile ? 'translateX(-50%)' : '',
                 }}
               >
                 <Image
