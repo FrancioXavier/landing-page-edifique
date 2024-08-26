@@ -34,6 +34,7 @@ import escolas from '@/config/img/activities/acoes-escolas.svg';
 import auloes from '@/config/img/activities/auloes.svg';
 import { useEffect, useState } from 'react';
 import ScrollToTopButton from '@/components/ScrollTop/ScrollToTopButton';
+import { Footer } from '@/components/Footer';
 
 export default function HomePage() {
   const OPTIONS: EmblaOptionsType = { align: 'start' };
@@ -361,6 +362,7 @@ export default function HomePage() {
           <Carousel slideType={slideHistory} options={OPTIONS} />
         </div>
       </CarouselSection>
+      <Footer />
     </div>
   );
 }
